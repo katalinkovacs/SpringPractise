@@ -1,0 +1,35 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+       xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id = "hellokatus" class = "spring.beaninheritance.HelloKatus" >   <!-- init-method="initWelcome" destroy-method="initBye" -->
+        <!-- <property name="welcome" value="PROPERTY WELCOME." />  -->
+        <!-- <property name="bye" value="PROPERTY Bye Bye." />  -->
+        <property name = "message1" value = "hellokatus   --> msg1:    Hello Katus!"/>
+        <property name = "message2" value = "hellokatus   --> msg2:    Szia Katusbogarkam!"/>
+    </bean>
+
+    <bean id =" hellosebi" class = "spring.beaninheritance.HelloSebi" parent = "hellokatus">
+        <property name = "message1" value = "hellosebi   --> msg1:  Hello Sebi!"/>
+        <property name = "message3" value = "hellosebi   --> msg3:  Szia Sebikem!"/>
+    </bean>
+
+    <bean id =" hellozoli" class = "spring.beaninheritance.HelloZoli" scope = "prototype" parent = "hellokatus">
+        <property name = "message1" value = "hellozoli   --> msg1:  Hello Zoli!"/>
+        <property name = "message2" value = "hellozoli   --> msg2:  Szia SZolikam!"/>
+    </bean>
+
+    <bean id =" helloanya" class = "spring.beaninheritance.HelloAnya" scope = "singleton" parent = "hellosebi" >
+        <property name = "message1" value = "helloanya   --> msg1:  Hello Anya!"/>
+    </bean>
+
+    <bean id = "welcomebye" class = "spring.beaninheritance.WelcomeBye" init-method="initWelcome" destroy-method="initBye">
+        <property name="welcome" value="PROPERTY WELCOME." />
+        <property name="bye" value="PROPERTY Bye Bye." />
+    </bean>
+
+
+</beans>
