@@ -11,7 +11,7 @@
             <bean id = "spellChecker" class = "spring.innerbeaninjection.SpellChecker"/>
         </property>
     </bean>
-    
+
     <!--
         <bean id="customerbean" class="spring.innerbeaninjection.Customer">
             <property name="personbean">

@@ -58,4 +58,10 @@ public class Customer {
     public void setPros(Properties pros) {
         this.pros = pros;
     }
+
+
+    @Override
+    public String toString() {
+        return "CUSTOMER --> LIST = " + lists + " SET = " + sets + " MAP = " + maps + " PROS = " + pros ;
+    }
 }
