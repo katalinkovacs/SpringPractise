@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="user" class="spring.dependencyinjection.constructorbased2.User" >
+        <constructor-arg value="Katalin" />
+        <constructor-arg value="42"/>
+        <constructor-arg value="Hungary"/>
+    </bean>
+
+    <bean id="user2" class="spring.dependencyinjection.constructorbased2.User" >
+        <constructor-arg type="int" value="3"/>
+        <constructor-arg type="java.lang.String" value="New Zealand"/>
+    </bean>
+
+    <bean id="user3" class="spring.dependencyinjection.constructorbased2.User" >
+        <constructor-arg type="java.lang.String" value="Sebi"/>
+        <constructor-arg type="int" value="3"/>
+    </bean>
+
+  <!--  <bean id="user4" class="spring.dependencyinjection.constructorbased2.User" >
+        <constructor-arg type="java.lang.String" value="Sebi"/>
+        <constructor-arg type="java.lang.String" value="New Zealand"/>
+    </bean>  -->
+
+    <bean id="user5" class="spring.dependencyinjection.constructorbased2.User" >
+        <constructor-arg index="1" value="41"/>
+        <constructor-arg index="0" value="Zoltan" />
+        <constructor-arg index="2" value="Australia"/>
+    </bean>
+
+
+
+</beans>
