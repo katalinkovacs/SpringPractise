@@ -10,6 +10,7 @@ public class MainApp {
 
     public static void main(String[] args) {
 
+        /*
         ApplicationContext context = new ClassPathXmlApplicationContext("SqlStoredProcedure.xml");
 
         StudentJDBCTemplate studentJDBCTemplate = (StudentJDBCTemplate)context.getBean("studentJDBCTemplate");
@@ -32,5 +33,8 @@ public class MainApp {
         System.out.print("ID : " + student.getId() );
         System.out.print(", Name : " + student.getName() );
         System.out.println(", Age : " + student.getAge());
+
+        */
     }
+
 }

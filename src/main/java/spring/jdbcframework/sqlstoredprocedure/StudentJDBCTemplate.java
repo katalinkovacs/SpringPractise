@@ -41,9 +41,17 @@ public class StudentJDBCTemplate implements StudentDAO {
     }
 
     public List<Student> listStudents() {
+        return null;
+    }
+
+
+/*
+    public List<Student> listStudents() {
         String SQL = "select * from Student";
         List<Student> students = jdbcTemplateObject.query(SQL, new StudentMapper());
         return students;
     }
+
+*/
 
 }

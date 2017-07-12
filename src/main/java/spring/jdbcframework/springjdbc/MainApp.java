@@ -10,13 +10,21 @@ public class MainApp {
 
     public static void main(String[] args) {
 
+        System.out.println("**************** MAIN started *****************");
 
         ApplicationContext context = new ClassPathXmlApplicationContext("JdbcSpring.xml");
+        System.out.println("CONTEXT CREATED............");
 
         StudentJDBCTemplate studentJDBCTemplate = (StudentJDBCTemplate)context.getBean("studentJDBCTemplate");
+        System.out.println("studentJDBCTemplate added to CONTEXT............");
+
 
         System.out.println("------Records Creation--------" );
+
         studentJDBCTemplate.create("Sebastian Kovacs", 3);
+        System.out.println("------Sebastian Kovacs--------" );
+
+
         studentJDBCTemplate.create("Oliver Kovacs", 3);
         studentJDBCTemplate.create("Reka Kallay", 6);
 
