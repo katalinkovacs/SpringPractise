@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class FearFactory implements CD {
 
-    public String play(){
+    public String perform(){
         return " Fear factory";
 
     }

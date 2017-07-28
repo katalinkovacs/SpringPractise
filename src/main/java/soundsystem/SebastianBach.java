@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 // @Component  -->  <bean id = "SebastianBach" class = "soundsystem.SebastianBach"></bean>
 public class SebastianBach implements CD{
 
-    public String play(){
+    public String perform(){
         return "Sebastian Bach";
     }
 }

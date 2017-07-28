@@ -16,11 +16,13 @@ public class CDPlayer {
 
     @Autowired
     public CDPlayer(CD cd){
+
         this.cd = cd;
     }
 
     public String play(){
-        return cd.play();
+
+        return cd.perform();
     }
 
 }

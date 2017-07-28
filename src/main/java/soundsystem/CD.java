@@ -1,5 +1,7 @@
 package soundsystem;
 
 public interface CD {
-    String play();
+
+    //method signature
+    String perform();
 }
